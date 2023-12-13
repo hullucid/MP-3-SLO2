@@ -4,7 +4,7 @@ public class TestGame {
         Game team2 = setTeamData();
         displayGame(team2);
     }
-        public static Game setTeamData(){
+        public static Game setTeamData(){ //method for setting the data for both teams
             Scanner inputDevice= new Scanner(System.in);
 
 
@@ -33,7 +33,7 @@ public class TestGame {
             return a;
         }
 
-        public static void displayGame(Game a){
+        public static void displayGame(Game a){ //method for game info display
             System.out.print("The first team is from: \n" + a.getSchool1());
             System.out.print("\n\nTheir mascot is: \n" + a.getMascot1());
             System.out.print("\n\nThey are playing: \n" + a.getSport1());

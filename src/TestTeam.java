@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
 public class TestTeam {
-    public static void main(String[] args) {
+    public static void main(String[] args) { //main method
         Team team1 = setTeamData();
         display(team1);
     }
-    public static Team setTeamData(){
+    public static Team setTeamData(){ //method for getting teams info
         Scanner inputDevice= new Scanner(System.in);
 
 
@@ -21,7 +21,7 @@ public class TestTeam {
         Team s = new Team(school, mascot, sport);
         return s;
     }
-    public static void display(Team s){
+    public static void display(Team s){ //method for school info display 
         System.out.print("School: " + s.getSchool());
         System.out.print("\n\nMascot: " + s.getMascot());
         System.out.print("\n\nSport: " + s.getSport());
